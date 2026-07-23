@@ -1,8 +1,8 @@
 name: Update GitHub Pages
 
 on:
-  release:
-    types: [published]
+  schedule:
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
